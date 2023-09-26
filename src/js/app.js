@@ -1,9 +1,8 @@
 export default function orderByProps(obj, arr) {
   const res = [];
   const arrMain = [];
-    for (const prop in obj) {
-    const newObj = { key: prop, value: obj[prop] };
-  
+  for (const prop in obj) {
+    const newObj = { key: prop, value: obj[prop] };      
     if (arr.indexOf(prop) === -1) {
       arrMain.push(newObj);
     } else {
